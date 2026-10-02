@@ -1,0 +1,41 @@
+# Dependencies and generated output
+node_modules/
+dist/
+.vite/
+.next/
+.nuxt/
+.cache/
+coverage/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa
+id_ed25519
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+*.sql.gz
+
+# Logs and runtime
+*.log
+*.pid
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local backups
+*.bak
+*.backup
+*.old
+*.orig
+*.before-*
