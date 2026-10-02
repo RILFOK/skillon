@@ -87,7 +87,7 @@ const Navigation = () => {
     { id: 'program', label: 'Программа' },
     { id: 'package', label: 'Спортпакет' },
     { id: 'travel', label: 'Как добраться' },
-    { id: 'register', label: 'Регистрация' },
+    { id: 'register', label: 'Архив' },
   ];
 
   return (
@@ -204,7 +204,7 @@ const Hero = () => (
           onClick={() => scrollTo('register')}
           className="inline-flex items-center justify-center gap-2 bg-white text-blue-700 hover:bg-blue-50 font-bold px-8 py-4 rounded-2xl transition-all transform hover:scale-105 shadow-2xl shadow-blue-900/30 btn-glow text-sm sm:text-base"
         >
-          <span>Регистрация</span>
+          <span>Статус проекта</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
@@ -285,7 +285,7 @@ const Package = () => (
           <div className="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-6xl md:text-7xl font-black py-4 px-8 rounded-3xl shadow-xl mb-4">
             27 900 ₽
           </div>
-          <p className="text-slate-500 dark:text-slate-400 text-lg">Стоимость участия</p>
+          <p className="text-slate-500 dark:text-slate-400 text-lg">Стоимость участия (архив)</p>
         </div>
 
         <h3 className="font-bold text-2xl mb-6 text-slate-800 dark:text-slate-200 text-center">Что входит в пакет:</h3>
@@ -536,29 +536,24 @@ const Registration = () => (
     <MountainSVG />
 
     <div className="relative z-10 max-w-4xl mx-auto text-center">
-      <h2 className="text-4xl md:text-6xl font-black mb-6">Готовы к старту?</h2>
+      <h2 className="text-4xl md:text-6xl font-black mb-6">Архивный концепт</h2>
       <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-        Присоединяйтесь к команде Skillon и покорите легендарный марафон за полярным кругом!
+        Соревнования были отменены из-за погодных условий. Этот лендинг сохранён как пример frontend-разработки.
       </p>
 
       <div className="glass rounded-3xl p-8 md:p-12 max-w-lg mx-auto">
         <div className="text-6xl md:text-7xl font-black mb-2 gradient-text">27 900 ₽</div>
-        <p className="text-blue-200 mb-8 text-lg">Спортпакет участника</p>
+        <p className="text-blue-200 mb-8 text-lg">Историческая стоимость спортпакета</p>
 
-        <a
-          href="https://reg.russiarunning.com/event/52MLM"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-3 w-full bg-white text-blue-700 hover:bg-blue-50 font-bold px-8 py-5 rounded-2xl transition-all transform hover:scale-105 shadow-2xl text-lg btn-glow"
+        <div
+          role="status"
+          className="inline-flex items-center justify-center w-full bg-white/85 text-blue-700 font-bold px-8 py-5 rounded-2xl shadow-2xl text-lg"
         >
-          <span>Регистрация на марафон</span>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
+          Регистрация закрыта
+        </div>
 
         <p className="text-sm text-blue-200 mt-6">
-          Официальная регистрация на Мурманский марафон
+          Демонстрационная страница. Приём заявок и оплат не осуществляется.
         </p>
       </div>
     </div>
